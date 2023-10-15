@@ -1,0 +1,827 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login-main .username, .login-main .password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 15px 0;
+}
+.login-main .username label, .login-main .password label {
+  font-size: 18px;
+}
+.login-main .username label i, .login-main .password label i {
+  font-size: 50px;
+  margin-right: 8px;
+  color: #3498db;
+  border: 2px solid #000;
+}
+.login-main .username input, .login-main .password input {
+  width: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  font-size: 16px;
+  font-family: "Gabarito", cursive;
+}
+
+.products .filters .filter1, .products .filters .filter2 {
+  background-color: #383838;
+  color: #fff;
+  width: 150px;
+  padding: 2%;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav .nav {
+  width: 25%;
+}
+.header-nav .nav ul {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  margin-left: 25px;
+}
+.header-nav .nav ul li {
+  margin: 10px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.header-nav .nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.header-nav .nav ul li a:hover {
+  color: #2C8AF2;
+  text-decoration: underline;
+}
+.header-nav .logo {
+  width: 50%;
+}
+.header-nav .logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav .logo a img {
+  width: 15%;
+}
+.header-nav .info {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+  width: 25%;
+}
+.header-nav .info a {
+  color: #000;
+  margin: 25px;
+  font-size: 30px;
+}
+.header-nav .info a:hover {
+  color: #2C8AF2;
+}
+
+.sub-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.main-button {
+  width: 170px;
+  height: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2C8AF2;
+  background-color: transparent;
+  border: 1px, solid, #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.main-button:hover {
+  background-color: #2C8AF2;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #fff;
+  width: 20vw;
+  height: 60vh;
+  padding: 20px;
+}
+.card img {
+  width: 100%;
+  max-height: 50%;
+  object-fit: cover;
+}
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-content .card-title {
+  margin-top: 20px;
+}
+.card-content .card-description {
+  margin-top: 20px;
+}
+.card-content .price-and-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.card-content .price-and-button .card-price {
+  flex: 1;
+  width: 50%;
+  font-size: 25px;
+  padding: auto;
+}
+.card-content .price-and-button .card-button {
+  display: flex;
+  text-decoration: none;
+}
+.card-content .price-and-button .card-button .button {
+  padding: 2%;
+  width: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2C8AF2;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.card-content .price-and-button .card-button .button:hover {
+  background-color: #2C8AF2;
+  color: #fff;
+}
+
+.products-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  color: #878787;
+  margin-bottom: 25px;
+}
+
+.products-description {
+  font-family: "Gabarito", cursive;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: -85px;
+  padding: 3%;
+  border: 2px solid black;
+}
+
+.products {
+  width: 100vw;
+  height: 160vh;
+  margin-top: 5%;
+}
+.products .filters {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+}
+.product-list .gallery .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product-list .gallery .cards .card {
+  width: 25vw;
+  margin: 2%;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+.pagination a {
+  font-size: 20px;
+  font-family: "Gabarito", cursive;
+  color: #000;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.pagination a:hover:not(.active) {
+  background-color: #fff;
+}
+.pagination .active {
+  background-color: #2C8AF2;
+  color: #fff;
+}
+
+.login-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.login-heading .login-logo {
+  width: 7.5%;
+}
+.login-heading .login-logo img {
+  width: 100%;
+}
+
+.login {
+  height: 100vh;
+}
+.login-icon {
+  position: absolute;
+  z-index: 500;
+  width: 100px;
+  height: 100px;
+  margin: -65px 46.5%;
+  background-color: #2C8AF2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-icon i {
+  color: #fff;
+  font-size: 60px;
+}
+.login-main {
+  position: relative;
+  border: 1px solid #000;
+  width: 30%;
+  height: 40vh;
+  border-radius: 45px;
+  background-color: #fff;
+  box-shadow: 0 15px 6px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -20px auto;
+}
+.login-main .remember-and-password {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.login-main .remember-and-password .remember-me {
+  width: 50%;
+}
+.login-main .remember-and-password .remember-me input {
+  width: 20%;
+  font-size: 15px;
+}
+.login-main .remember-and-password .forgot-password a {
+  width: 5%;
+  font-size: 15px;
+  text-decoration: none;
+}
+.login-sub {
+  border: 1px solid #000;
+  width: 25%;
+  height: 40vh;
+  border-radius: 45px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin: -230px 0 0 575px;
+}
+.login-sub-text {
+  font-size: 25px;
+  font-family: "Gabarito", cursive;
+  padding: 15px;
+}
+.login-text-quote {
+  width: 400px;
+  height: 125px;
+  margin: 35px 0 0 575px;
+  text-align: center;
+  font-family: "Young Serif", serif;
+}
+.login-text-line {
+  width: 350px;
+  margin: -75px 0 0 600px;
+  height: 2px;
+  background-color: #000;
+}
+.login-text-name {
+  width: 150px;
+  margin: 15px 0 0 725px;
+  font-family: "Young Serif", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../assets/bg-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.about-left {
+  width: 30%;
+  position: relative;
+  margin-left: 50px;
+}
+.about-left img {
+  width: 100%;
+}
+.about-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+.about-right .about-title {
+  font-size: 30px;
+  font-family: "Gabarito", cursive;
+}
+.about-right .stars {
+  margin: 30px 0;
+}
+.about-right .star {
+  font-size: 15px;
+  color: #2C8AF2;
+}
+.about-right .star + .star {
+  margin-left: 10px;
+}
+.about-right .description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  color: #878787;
+  text-align: justify;
+}
+.about-right .description::first-letter {
+  padding-left: 50px;
+}
+
+.topProducts {
+  width: 100vw;
+  height: 100vh;
+}
+.topProducts .section-title {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: "Gabarito", cursive;
+  text-align: center;
+}
+.topProducts .gallery .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .footer-logo {
+  width: 25vw;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-logo img {
+  width: 45%;
+}
+footer .footer-social-media {
+  width: 200px;
+  margin-bottom: 70px;
+}
+footer .footer-social-media .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer-social-media .social-media .social-media-item {
+  list-style: none;
+}
+footer .footer-social-media .social-media .social-media-link {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  transition: color 0.7s;
+}
+footer .footer-social-media .social-media .social-media-link:hover {
+  color: #2C8AF2;
+}
+footer .footer-mail, footer .footer-phone {
+  font-size: 25px;
+  font-family: "Gabarito", cursive;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 25vw;
+}
+footer .footer-mail i, footer .footer-phone i {
+  margin-right: 15px;
+}
+footer .footer-mail:hover, footer .footer-phone:hover {
+  color: #2C8AF2;
+}
+
+.heading {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+.heading-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product-details {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.product-details .product-img {
+  width: 60%;
+  position: relative;
+  margin-left: 50px;
+}
+.product-details .product-img img {
+  width: 100%;
+}
+.product-details .product-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.product-details .product-info .product-name {
+  font-size: 50px;
+  font-family: "Gabarito", cursive;
+  margin-bottom: 40px;
+}
+.product-details .product-info .product-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #878787;
+}
+.product-details .product-info .product-price {
+  width: 100%;
+  font-size: 85px;
+  margin-top: 10px;
+}
+.product-details .product-info hr {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 50px;
+  background-color: #000;
+}
+.product-details .product-info .size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  margin-bottom: 50px;
+}
+.product-details .product-info .size a {
+  font-size: 20px;
+  font-family: "Gabarito", cursive;
+  color: #000;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.product-details .product-info .size a:hover:not(.active) {
+  background-color: #fff;
+}
+.product-details .product-info .size .active {
+  background-color: #2C8AF2;
+  color: #fff;
+}
+
+@media only screen and (max-width: 820px) {
+  * {
+    width: 100%;
+  }
+  .star {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+  }
+  .logo a img {
+    width: 30%;
+  }
+  .info {
+    margin-right: 20px;
+  }
+  .about .about-right {
+    width: 75%;
+  }
+  .about .about-right .about-title {
+    width: 200%;
+    text-align: center;
+  }
+  .about .about-right .description {
+    width: 125%;
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  .about .about-right .stars {
+    display: none;
+  }
+  .topProducts {
+    height: 100vh;
+  }
+  .cards .card .card-content .card-description {
+    display: none;
+  }
+  .cards .card .card-content .price-and-button {
+    display: block;
+  }
+  .cards .card .card-content .price-and-button .card-price {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .cards .card .card-content .price-and-button .card-button {
+    width: 200px;
+  }
+  .products {
+    height: 235vh;
+  }
+  .products-heading {
+    width: 75%;
+    font-size: 50px;
+    margin: 30px auto;
+  }
+  .products-description {
+    width: 75%;
+    font-size: 18px;
+    margin: -30px auto;
+  }
+  .product-list {
+    height: 150vh;
+  }
+  .product-list .gallery .cards .card {
+    margin-top: 20px;
+  }
+  .product-list .gallery .cards .card-content .card-title {
+    font-size: 25px;
+  }
+  .product-list .gallery .cards .card-content .card-description {
+    font-size: 15px;
+  }
+  .product-list .gallery .cards .card-content .price-and-button {
+    display: block;
+  }
+  .product-list .gallery .cards .card-content .card-price {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .product-list .gallery .cards .card-content .card-button {
+    width: 200px;
+  }
+  .heading {
+    height: 25vh;
+  }
+  .product-details {
+    height: 50vh;
+  }
+  .product-details .product-info {
+    width: 80%;
+    height: 60vh;
+  }
+  .product-details .product-info .product-name {
+    font-size: 25px;
+  }
+  .product-details .product-info .product-description {
+    margin-top: -30px;
+    font-size: 20px;
+  }
+  .product-details .product-info .product-price {
+    font-size: 30px;
+  }
+  .product-details .product-info .product-size {
+    display: none;
+  }
+  .product-details .product-info .size {
+    margin-top: -40px;
+  }
+  .product-details .product-info .size a {
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+  }
+  .product-details .product-info .main-button {
+    margin-top: -40px;
+  }
+  .login-icon {
+    left: -15px;
+  }
+  .login-sub {
+    display: none;
+  }
+  .login-main {
+    width: 45%;
+  }
+  .login-main .username {
+    width: 85%;
+  }
+  .login-main .password {
+    width: 85%;
+  }
+  .login-main .remember-and-password {
+    width: 85%;
+  }
+  .login-main .remember-and-password .remember-me {
+    width: 100%;
+  }
+  .login-text .login-text-quote {
+    margin: 50px auto;
+  }
+  .login-text .login-text-line {
+    margin: -110px auto;
+  }
+  .login-text .login-text-name {
+    margin: 125px auto;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .about .about-left {
+    display: none;
+  }
+  .about .about-right {
+    width: 100%;
+  }
+  .about .about-right .about-title {
+    width: 200%;
+    text-align: center;
+  }
+  .about .about-right .description {
+    width: 150%;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .about .about-right .stars {
+    display: none;
+  }
+  .topProducts {
+    height: 70vh;
+  }
+  .cards .card .card-content .card-description {
+    display: none;
+  }
+  .cards .card .card-content .price-and-button {
+    display: block;
+  }
+  .cards .card .card-content .price-and-button .card-price {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .cards .card .card-content .price-and-button .card-button {
+    width: 100px;
+  }
+  .products {
+    height: 160vh;
+  }
+  .products-heading {
+    font-size: 25px;
+    width: 75%;
+    margin: 100px auto 0;
+  }
+  .products-description {
+    font-size: 14px;
+    width: 75%;
+    margin: 20px auto;
+  }
+  footer .footer-mail, footer .footer-phone {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-mail p, footer .footer-phone p {
+    font-size: 20px;
+  }
+  .heading {
+    height: 15vh;
+  }
+  .product-details {
+    height: 70vh;
+  }
+  .product-details .product-info {
+    width: 70%;
+    height: 60vh;
+  }
+  .product-details .product-info .product-name {
+    font-size: 25px;
+  }
+  .product-details .product-info .product-description {
+    margin-top: -30px;
+    font-size: 15px;
+  }
+  .product-details .product-info .product-price {
+    font-size: 30px;
+  }
+  .product-details .product-info .product-size {
+    display: none;
+  }
+  .product-details .product-info .size {
+    margin-top: -40px;
+  }
+  .product-details .product-info .size a {
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+  }
+  .product-details .product-info .main-button {
+    margin-top: -40px;
+  }
+  .login-icon {
+    width: 75px;
+    height: 75px;
+    left: -20px;
+    top: 120px;
+  }
+  .login-sub {
+    display: none;
+  }
+  .login-main {
+    width: 65%;
+    height: 50%;
+    top: 30px;
+  }
+  .login-main .username {
+    width: 85%;
+  }
+  .login-main .password {
+    width: 85%;
+  }
+  .login-main .remember-and-password {
+    width: 100%;
+  }
+  .login-main .remember-and-password .remember-me {
+    width: 100%;
+  }
+  .login-text .login-text-quote {
+    margin: 75px auto;
+  }
+  .login-text .login-text-line {
+    margin: -130px auto;
+  }
+  .login-text .login-text-name {
+    margin: 160px auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
